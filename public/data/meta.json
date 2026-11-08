@@ -1,0 +1,59 @@
+{
+  "model_version": "telusur-lgbm-aci-v0.4.2-elliptic",
+  "export_date": "2026-11-07",
+  "protocol": "Elliptic (Bitcoin), pembagian temporal t1 sampai t34 (latih/kalibrasi) dan t35 sampai t49 (uji), rata-rata 5 seed.",
+  "dataset_scope": "Bitcoin (Elliptic), 203.769 node transaksi dan 234.355 aliran terarah. Bukan data TRON atau EVM.",
+  "benchmark_hardware": "Prosesor tunggal x86_64 (1 vCPU uji lokal, tanpa akselerasi GPU): waktu inferensi < 1 ms per transaksi (> 39.000 transaksi/detik).",
+  "metrics_table_3": [
+    {
+      "model": "LightGBM + fitur graf 2-lompatan (utama)",
+      "f1_pct": "82,6%",
+      "fpr_pct": "0,24%",
+      "recall_pct": "73,1%",
+      "precision_pct": "94,9%",
+      "note": "Alarm palsu paling rendah pada protokol pembagian temporal 5 seed"
+    },
+    {
+      "model": "LightGBM tanpa fitur konteks rezim",
+      "f1_pct": "82,5%",
+      "fpr_pct": "0,25%",
+      "recall_pct": "72,9%",
+      "precision_pct": "94,8%",
+      "note": "Selisih terhadap fitur rezim hanya 0,1 poin F1 (2,0% dari total gain)"
+    },
+    {
+      "model": "XGBoost (pembanding)",
+      "f1_pct": "81,7%",
+      "fpr_pct": "0,38%",
+      "recall_pct": "72,4%",
+      "precision_pct": "93,7%",
+      "note": "Selisih F1 sekitar 1 poin; menghasilkan lebih banyak alarm palsu dibanding LightGBM"
+    },
+    {
+      "model": "Random Forest (pembanding)",
+      "f1_pct": "81,2%",
+      "fpr_pct": "0,44%",
+      "recall_pct": "71,8%",
+      "precision_pct": "93,4%",
+      "note": "Baseline ansambel pohon tanpa boosting gradien"
+    }
+  ],
+  "metrics_table_4_aci": [
+    {
+      "strategy": "Ambang statis (tanpa kalibrasi ulang)",
+      "mean_fpr_pct": "1,54%",
+      "max_fpr_pct": "2,68% (t44)",
+      "pre_t43_recall_pct": "85,9%",
+      "post_t43_recall_pct": "1,8%",
+      "note": "Rentan mengalami lonjakan alarm palsu ketika distribusi transaksi berubah"
+    },
+    {
+      "strategy": "Ambang menyesuaikan diri (Adaptive Conformal Inference / ACI)",
+      "mean_fpr_pct": "1,05%",
+      "max_fpr_pct": "2,31% (t44), 2,14% (t49)",
+      "pre_t43_recall_pct": "85,9%",
+      "post_t43_recall_pct": "1,8% (sebelum pelatihan ulang)",
+      "note": "Menjaga rata-rata FPR jangka panjang mendekati target 1,0%, namun tidak memulihkan recall tanpa pelatihan ulang"
+    }
+  ]
+}

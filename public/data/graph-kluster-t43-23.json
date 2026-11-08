@@ -1,0 +1,1341 @@
+{
+  "cluster_id": "kluster-t43-23",
+  "timestep": 43,
+  "focal_node_id": "tx_230488910",
+  "nodes": [
+    {
+      "id": "tx_230410012",
+      "short_id": "tx_2304…0012",
+      "role": "Sumber A",
+      "status": "sumber",
+      "timestep": 42,
+      "score": 0.78,
+      "band": "Tinggi",
+      "pred_set": [
+        "Ilegal"
+      ],
+      "volume_btc": 14.8,
+      "in_degree": 1,
+      "out_degree": 4,
+      "x": 90,
+      "y": 170,
+      "features_top": [
+        {
+          "name": "Dana langsung dipecah ke banyak dompet perantara sekaligus",
+          "technical_name": "local_out_degree_burst_ratio",
+          "contribution": 0.24
+        },
+        {
+          "name": "Proporsi dana yang dibagi memiliki nominal hampir identik",
+          "technical_name": "split_output_variance_inv",
+          "contribution": 0.16
+        },
+        {
+          "name": "Tidak ada saldo kembalian yang bertahan di transaksi asal",
+          "technical_name": "self_change_retention_ratio",
+          "contribution": 0.11
+        },
+        {
+          "name": "Tetangga hilir membentuk rantai pengelupasan berurutan",
+          "technical_name": "downstream_2hop_chain_depth",
+          "contribution": 0.09
+        },
+        {
+          "name": "Frekuensi transaksi sebelumnya berada pada rentang wajar",
+          "technical_name": "historical_tx_rate_norm",
+          "contribution": -0.06
+        },
+        {
+          "name": "Biaya transaksi sesuai rata-rata blok saat itu",
+          "technical_name": "block_fee_median_deviation",
+          "contribution": -0.03
+        }
+      ]
+    },
+    {
+      "id": "tx_230410089",
+      "short_id": "tx_2304…0089",
+      "role": "Sumber B",
+      "status": "sumber",
+      "timestep": 42,
+      "score": 0.74,
+      "band": "Tinggi",
+      "pred_set": [
+        "Ilegal"
+      ],
+      "volume_btc": 11.4,
+      "in_degree": 2,
+      "out_degree": 3,
+      "x": 90,
+      "y": 370,
+      "features_top": [
+        {
+          "name": "Dana langsung dipecah ke banyak dompet perantara sekaligus",
+          "technical_name": "local_out_degree_burst_ratio",
+          "contribution": 0.24
+        },
+        {
+          "name": "Proporsi dana yang dibagi memiliki nominal hampir identik",
+          "technical_name": "split_output_variance_inv",
+          "contribution": 0.16
+        },
+        {
+          "name": "Tidak ada saldo kembalian yang bertahan di transaksi asal",
+          "technical_name": "self_change_retention_ratio",
+          "contribution": 0.11
+        },
+        {
+          "name": "Tetangga hilir membentuk rantai pengelupasan berurutan",
+          "technical_name": "downstream_2hop_chain_depth",
+          "contribution": 0.09
+        },
+        {
+          "name": "Frekuensi transaksi sebelumnya berada pada rentang wajar",
+          "technical_name": "historical_tx_rate_norm",
+          "contribution": -0.06
+        },
+        {
+          "name": "Biaya transaksi sesuai rata-rata blok saat itu",
+          "technical_name": "block_fee_median_deviation",
+          "contribution": -0.03
+        }
+      ]
+    },
+    {
+      "id": "tx_230421101",
+      "short_id": "tx_2304…1101",
+      "role": "Perantara M1",
+      "status": "perantara",
+      "timestep": 42,
+      "score": 0.62,
+      "band": "Sedang",
+      "pred_set": [
+        "Ilegal",
+        "Legal (ambang batas)"
+      ],
+      "volume_btc": 4.2,
+      "in_degree": 1,
+      "out_degree": 2,
+      "x": 270,
+      "y": 85,
+      "features_top": [
+        {
+          "name": "Dana hanya singgah singkat sebelum diteruskan ke simpul berikutnya",
+          "technical_name": "relay_passthrough_velocity",
+          "contribution": 0.14
+        },
+        {
+          "name": "Menerima aliran dari node sumber berisiko tinggi",
+          "technical_name": "upstream_source_risk_prop",
+          "contribution": 0.12
+        },
+        {
+          "name": "Sebagian kecil dana dipotong pada setiap lompatan (pola pengelupasan)",
+          "technical_name": "peel_fraction_consistency",
+          "contribution": 0.08
+        },
+        {
+          "name": "Jumlah koneksi total masih dalam batas transaksi ritel",
+          "technical_name": "total_degree_log_norm",
+          "contribution": -0.07
+        },
+        {
+          "name": "Variasi nilai keluaran tidak sepenuhnya seragam",
+          "technical_name": "output_value_dispersion",
+          "contribution": -0.04
+        },
+        {
+          "name": "Korelasi waktu dengan kluster pencairan hilir",
+          "technical_name": "temporal_sync_with_sink_score",
+          "contribution": 0.06
+        }
+      ]
+    },
+    {
+      "id": "tx_230421102",
+      "short_id": "tx_2304…1102",
+      "role": "Perantara M2",
+      "status": "perantara",
+      "timestep": 42,
+      "score": 0.66,
+      "band": "Sedang",
+      "pred_set": [
+        "Ilegal",
+        "Legal (ambang batas)"
+      ],
+      "volume_btc": 3.85,
+      "in_degree": 1,
+      "out_degree": 2,
+      "x": 270,
+      "y": 165,
+      "features_top": [
+        {
+          "name": "Dana hanya singgah singkat sebelum diteruskan ke simpul berikutnya",
+          "technical_name": "relay_passthrough_velocity",
+          "contribution": 0.14
+        },
+        {
+          "name": "Menerima aliran dari node sumber berisiko tinggi",
+          "technical_name": "upstream_source_risk_prop",
+          "contribution": 0.12
+        },
+        {
+          "name": "Sebagian kecil dana dipotong pada setiap lompatan (pola pengelupasan)",
+          "technical_name": "peel_fraction_consistency",
+          "contribution": 0.08
+        },
+        {
+          "name": "Jumlah koneksi total masih dalam batas transaksi ritel",
+          "technical_name": "total_degree_log_norm",
+          "contribution": -0.07
+        },
+        {
+          "name": "Variasi nilai keluaran tidak sepenuhnya seragam",
+          "technical_name": "output_value_dispersion",
+          "contribution": -0.04
+        },
+        {
+          "name": "Korelasi waktu dengan kluster pencairan hilir",
+          "technical_name": "temporal_sync_with_sink_score",
+          "contribution": 0.06
+        }
+      ]
+    },
+    {
+      "id": "tx_230421103",
+      "short_id": "tx_2304…1103",
+      "role": "Perantara M3",
+      "status": "perantara",
+      "timestep": 43,
+      "score": 0.69,
+      "band": "Tinggi",
+      "pred_set": [
+        "Ilegal"
+      ],
+      "volume_btc": 4.1,
+      "in_degree": 2,
+      "out_degree": 2,
+      "x": 270,
+      "y": 245,
+      "features_top": [
+        {
+          "name": "Dana hanya singgah singkat sebelum diteruskan ke simpul berikutnya",
+          "technical_name": "relay_passthrough_velocity",
+          "contribution": 0.14
+        },
+        {
+          "name": "Menerima aliran dari node sumber berisiko tinggi",
+          "technical_name": "upstream_source_risk_prop",
+          "contribution": 0.12
+        },
+        {
+          "name": "Sebagian kecil dana dipotong pada setiap lompatan (pola pengelupasan)",
+          "technical_name": "peel_fraction_consistency",
+          "contribution": 0.08
+        },
+        {
+          "name": "Jumlah koneksi total masih dalam batas transaksi ritel",
+          "technical_name": "total_degree_log_norm",
+          "contribution": -0.07
+        },
+        {
+          "name": "Variasi nilai keluaran tidak sepenuhnya seragam",
+          "technical_name": "output_value_dispersion",
+          "contribution": -0.04
+        },
+        {
+          "name": "Korelasi waktu dengan kluster pencairan hilir",
+          "technical_name": "temporal_sync_with_sink_score",
+          "contribution": 0.06
+        }
+      ]
+    },
+    {
+      "id": "tx_230421104",
+      "short_id": "tx_2304…1104",
+      "role": "Perantara M4",
+      "status": "perantara",
+      "timestep": 43,
+      "score": 0.58,
+      "band": "Sedang",
+      "pred_set": [
+        "Ilegal",
+        "Legal (ambang batas)"
+      ],
+      "volume_btc": 3.6,
+      "in_degree": 1,
+      "out_degree": 2,
+      "x": 270,
+      "y": 325,
+      "features_top": [
+        {
+          "name": "Dana hanya singgah singkat sebelum diteruskan ke simpul berikutnya",
+          "technical_name": "relay_passthrough_velocity",
+          "contribution": 0.14
+        },
+        {
+          "name": "Menerima aliran dari node sumber berisiko tinggi",
+          "technical_name": "upstream_source_risk_prop",
+          "contribution": 0.12
+        },
+        {
+          "name": "Sebagian kecil dana dipotong pada setiap lompatan (pola pengelupasan)",
+          "technical_name": "peel_fraction_consistency",
+          "contribution": 0.08
+        },
+        {
+          "name": "Jumlah koneksi total masih dalam batas transaksi ritel",
+          "technical_name": "total_degree_log_norm",
+          "contribution": -0.07
+        },
+        {
+          "name": "Variasi nilai keluaran tidak sepenuhnya seragam",
+          "technical_name": "output_value_dispersion",
+          "contribution": -0.04
+        },
+        {
+          "name": "Korelasi waktu dengan kluster pencairan hilir",
+          "technical_name": "temporal_sync_with_sink_score",
+          "contribution": 0.06
+        }
+      ]
+    },
+    {
+      "id": "tx_230421105",
+      "short_id": "tx_2304…1105",
+      "role": "Perantara M5",
+      "status": "perantara",
+      "timestep": 43,
+      "score": 0.61,
+      "band": "Sedang",
+      "pred_set": [
+        "Ilegal",
+        "Legal (ambang batas)"
+      ],
+      "volume_btc": 4.5,
+      "in_degree": 1,
+      "out_degree": 2,
+      "x": 270,
+      "y": 405,
+      "features_top": [
+        {
+          "name": "Dana hanya singgah singkat sebelum diteruskan ke simpul berikutnya",
+          "technical_name": "relay_passthrough_velocity",
+          "contribution": 0.14
+        },
+        {
+          "name": "Menerima aliran dari node sumber berisiko tinggi",
+          "technical_name": "upstream_source_risk_prop",
+          "contribution": 0.12
+        },
+        {
+          "name": "Sebagian kecil dana dipotong pada setiap lompatan (pola pengelupasan)",
+          "technical_name": "peel_fraction_consistency",
+          "contribution": 0.08
+        },
+        {
+          "name": "Jumlah koneksi total masih dalam batas transaksi ritel",
+          "technical_name": "total_degree_log_norm",
+          "contribution": -0.07
+        },
+        {
+          "name": "Variasi nilai keluaran tidak sepenuhnya seragam",
+          "technical_name": "output_value_dispersion",
+          "contribution": -0.04
+        },
+        {
+          "name": "Korelasi waktu dengan kluster pencairan hilir",
+          "technical_name": "temporal_sync_with_sink_score",
+          "contribution": 0.06
+        }
+      ]
+    },
+    {
+      "id": "tx_230421106",
+      "short_id": "tx_2304…1106",
+      "role": "Perantara M6",
+      "status": "perantara",
+      "timestep": 43,
+      "score": 0.54,
+      "band": "Sedang",
+      "pred_set": [
+        "Ilegal",
+        "Legal (ambang batas)"
+      ],
+      "volume_btc": 3.3,
+      "in_degree": 1,
+      "out_degree": 2,
+      "x": 270,
+      "y": 485,
+      "features_top": [
+        {
+          "name": "Dana hanya singgah singkat sebelum diteruskan ke simpul berikutnya",
+          "technical_name": "relay_passthrough_velocity",
+          "contribution": 0.14
+        },
+        {
+          "name": "Menerima aliran dari node sumber berisiko tinggi",
+          "technical_name": "upstream_source_risk_prop",
+          "contribution": 0.12
+        },
+        {
+          "name": "Sebagian kecil dana dipotong pada setiap lompatan (pola pengelupasan)",
+          "technical_name": "peel_fraction_consistency",
+          "contribution": 0.08
+        },
+        {
+          "name": "Jumlah koneksi total masih dalam batas transaksi ritel",
+          "technical_name": "total_degree_log_norm",
+          "contribution": -0.07
+        },
+        {
+          "name": "Variasi nilai keluaran tidak sepenuhnya seragam",
+          "technical_name": "output_value_dispersion",
+          "contribution": -0.04
+        },
+        {
+          "name": "Korelasi waktu dengan kluster pencairan hilir",
+          "technical_name": "temporal_sync_with_sink_score",
+          "contribution": 0.06
+        }
+      ]
+    },
+    {
+      "id": "tx_230450201",
+      "short_id": "tx_2304…0201",
+      "role": "Rantai P1",
+      "status": "perantara",
+      "timestep": 43,
+      "score": 0.71,
+      "band": "Tinggi",
+      "pred_set": [
+        "Ilegal"
+      ],
+      "volume_btc": 3.9,
+      "in_degree": 1,
+      "out_degree": 1,
+      "x": 475,
+      "y": 75,
+      "features_top": [
+        {
+          "name": "Dana hanya singgah singkat sebelum diteruskan ke simpul berikutnya",
+          "technical_name": "relay_passthrough_velocity",
+          "contribution": 0.14
+        },
+        {
+          "name": "Menerima aliran dari node sumber berisiko tinggi",
+          "technical_name": "upstream_source_risk_prop",
+          "contribution": 0.12
+        },
+        {
+          "name": "Sebagian kecil dana dipotong pada setiap lompatan (pola pengelupasan)",
+          "technical_name": "peel_fraction_consistency",
+          "contribution": 0.08
+        },
+        {
+          "name": "Jumlah koneksi total masih dalam batas transaksi ritel",
+          "technical_name": "total_degree_log_norm",
+          "contribution": -0.07
+        },
+        {
+          "name": "Variasi nilai keluaran tidak sepenuhnya seragam",
+          "technical_name": "output_value_dispersion",
+          "contribution": -0.04
+        },
+        {
+          "name": "Korelasi waktu dengan kluster pencairan hilir",
+          "technical_name": "temporal_sync_with_sink_score",
+          "contribution": 0.06
+        }
+      ]
+    },
+    {
+      "id": "tx_230450202",
+      "short_id": "tx_2304…0202",
+      "role": "Rantai P2",
+      "status": "perantara",
+      "timestep": 43,
+      "score": 0.73,
+      "band": "Tinggi",
+      "pred_set": [
+        "Ilegal"
+      ],
+      "volume_btc": 3.65,
+      "in_degree": 2,
+      "out_degree": 1,
+      "x": 475,
+      "y": 145,
+      "features_top": [
+        {
+          "name": "Dana hanya singgah singkat sebelum diteruskan ke simpul berikutnya",
+          "technical_name": "relay_passthrough_velocity",
+          "contribution": 0.14
+        },
+        {
+          "name": "Menerima aliran dari node sumber berisiko tinggi",
+          "technical_name": "upstream_source_risk_prop",
+          "contribution": 0.12
+        },
+        {
+          "name": "Sebagian kecil dana dipotong pada setiap lompatan (pola pengelupasan)",
+          "technical_name": "peel_fraction_consistency",
+          "contribution": 0.08
+        },
+        {
+          "name": "Jumlah koneksi total masih dalam batas transaksi ritel",
+          "technical_name": "total_degree_log_norm",
+          "contribution": -0.07
+        },
+        {
+          "name": "Variasi nilai keluaran tidak sepenuhnya seragam",
+          "technical_name": "output_value_dispersion",
+          "contribution": -0.04
+        },
+        {
+          "name": "Korelasi waktu dengan kluster pencairan hilir",
+          "technical_name": "temporal_sync_with_sink_score",
+          "contribution": 0.06
+        }
+      ]
+    },
+    {
+      "id": "tx_230450203",
+      "short_id": "tx_2304…0203",
+      "role": "Rantai P3",
+      "status": "perantara",
+      "timestep": 43,
+      "score": 0.76,
+      "band": "Tinggi",
+      "pred_set": [
+        "Ilegal"
+      ],
+      "volume_btc": 3.95,
+      "in_degree": 2,
+      "out_degree": 1,
+      "x": 475,
+      "y": 215,
+      "features_top": [
+        {
+          "name": "Dana hanya singgah singkat sebelum diteruskan ke simpul berikutnya",
+          "technical_name": "relay_passthrough_velocity",
+          "contribution": 0.14
+        },
+        {
+          "name": "Menerima aliran dari node sumber berisiko tinggi",
+          "technical_name": "upstream_source_risk_prop",
+          "contribution": 0.12
+        },
+        {
+          "name": "Sebagian kecil dana dipotong pada setiap lompatan (pola pengelupasan)",
+          "technical_name": "peel_fraction_consistency",
+          "contribution": 0.08
+        },
+        {
+          "name": "Jumlah koneksi total masih dalam batas transaksi ritel",
+          "technical_name": "total_degree_log_norm",
+          "contribution": -0.07
+        },
+        {
+          "name": "Variasi nilai keluaran tidak sepenuhnya seragam",
+          "technical_name": "output_value_dispersion",
+          "contribution": -0.04
+        },
+        {
+          "name": "Korelasi waktu dengan kluster pencairan hilir",
+          "technical_name": "temporal_sync_with_sink_score",
+          "contribution": 0.06
+        }
+      ]
+    },
+    {
+      "id": "tx_230450204",
+      "short_id": "tx_2304…0204",
+      "role": "Rantai P4",
+      "status": "perantara",
+      "timestep": 43,
+      "score": 0.68,
+      "band": "Tinggi",
+      "pred_set": [
+        "Ilegal"
+      ],
+      "volume_btc": 3.4,
+      "in_degree": 1,
+      "out_degree": 1,
+      "x": 475,
+      "y": 285,
+      "features_top": [
+        {
+          "name": "Dana hanya singgah singkat sebelum diteruskan ke simpul berikutnya",
+          "technical_name": "relay_passthrough_velocity",
+          "contribution": 0.14
+        },
+        {
+          "name": "Menerima aliran dari node sumber berisiko tinggi",
+          "technical_name": "upstream_source_risk_prop",
+          "contribution": 0.12
+        },
+        {
+          "name": "Sebagian kecil dana dipotong pada setiap lompatan (pola pengelupasan)",
+          "technical_name": "peel_fraction_consistency",
+          "contribution": 0.08
+        },
+        {
+          "name": "Jumlah koneksi total masih dalam batas transaksi ritel",
+          "technical_name": "total_degree_log_norm",
+          "contribution": -0.07
+        },
+        {
+          "name": "Variasi nilai keluaran tidak sepenuhnya seragam",
+          "technical_name": "output_value_dispersion",
+          "contribution": -0.04
+        },
+        {
+          "name": "Korelasi waktu dengan kluster pencairan hilir",
+          "technical_name": "temporal_sync_with_sink_score",
+          "contribution": 0.06
+        }
+      ]
+    },
+    {
+      "id": "tx_230450205",
+      "short_id": "tx_2304…0205",
+      "role": "Rantai P5",
+      "status": "perantara",
+      "timestep": 43,
+      "score": 0.67,
+      "band": "Sedang",
+      "pred_set": [
+        "Ilegal",
+        "Legal (ambang batas)"
+      ],
+      "volume_btc": 3.2,
+      "in_degree": 2,
+      "out_degree": 1,
+      "x": 475,
+      "y": 355,
+      "features_top": [
+        {
+          "name": "Dana hanya singgah singkat sebelum diteruskan ke simpul berikutnya",
+          "technical_name": "relay_passthrough_velocity",
+          "contribution": 0.14
+        },
+        {
+          "name": "Menerima aliran dari node sumber berisiko tinggi",
+          "technical_name": "upstream_source_risk_prop",
+          "contribution": 0.12
+        },
+        {
+          "name": "Sebagian kecil dana dipotong pada setiap lompatan (pola pengelupasan)",
+          "technical_name": "peel_fraction_consistency",
+          "contribution": 0.08
+        },
+        {
+          "name": "Jumlah koneksi total masih dalam batas transaksi ritel",
+          "technical_name": "total_degree_log_norm",
+          "contribution": -0.07
+        },
+        {
+          "name": "Variasi nilai keluaran tidak sepenuhnya seragam",
+          "technical_name": "output_value_dispersion",
+          "contribution": -0.04
+        },
+        {
+          "name": "Korelasi waktu dengan kluster pencairan hilir",
+          "technical_name": "temporal_sync_with_sink_score",
+          "contribution": 0.06
+        }
+      ]
+    },
+    {
+      "id": "tx_230450206",
+      "short_id": "tx_2304…0206",
+      "role": "Rantai P6",
+      "status": "perantara",
+      "timestep": 43,
+      "score": 0.64,
+      "band": "Sedang",
+      "pred_set": [
+        "Ilegal",
+        "Legal (ambang batas)"
+      ],
+      "volume_btc": 3.1,
+      "in_degree": 1,
+      "out_degree": 1,
+      "x": 475,
+      "y": 425,
+      "features_top": [
+        {
+          "name": "Dana hanya singgah singkat sebelum diteruskan ke simpul berikutnya",
+          "technical_name": "relay_passthrough_velocity",
+          "contribution": 0.14
+        },
+        {
+          "name": "Menerima aliran dari node sumber berisiko tinggi",
+          "technical_name": "upstream_source_risk_prop",
+          "contribution": 0.12
+        },
+        {
+          "name": "Sebagian kecil dana dipotong pada setiap lompatan (pola pengelupasan)",
+          "technical_name": "peel_fraction_consistency",
+          "contribution": 0.08
+        },
+        {
+          "name": "Jumlah koneksi total masih dalam batas transaksi ritel",
+          "technical_name": "total_degree_log_norm",
+          "contribution": -0.07
+        },
+        {
+          "name": "Variasi nilai keluaran tidak sepenuhnya seragam",
+          "technical_name": "output_value_dispersion",
+          "contribution": -0.04
+        },
+        {
+          "name": "Korelasi waktu dengan kluster pencairan hilir",
+          "technical_name": "temporal_sync_with_sink_score",
+          "contribution": 0.06
+        }
+      ]
+    },
+    {
+      "id": "tx_230450207",
+      "short_id": "tx_2304…0207",
+      "role": "Rantai P7",
+      "status": "perantara",
+      "timestep": 43,
+      "score": 0.63,
+      "band": "Sedang",
+      "pred_set": [
+        "Ilegal",
+        "Legal (ambang batas)"
+      ],
+      "volume_btc": 2.95,
+      "in_degree": 1,
+      "out_degree": 1,
+      "x": 475,
+      "y": 495,
+      "features_top": [
+        {
+          "name": "Dana hanya singgah singkat sebelum diteruskan ke simpul berikutnya",
+          "technical_name": "relay_passthrough_velocity",
+          "contribution": 0.14
+        },
+        {
+          "name": "Menerima aliran dari node sumber berisiko tinggi",
+          "technical_name": "upstream_source_risk_prop",
+          "contribution": 0.12
+        },
+        {
+          "name": "Sebagian kecil dana dipotong pada setiap lompatan (pola pengelupasan)",
+          "technical_name": "peel_fraction_consistency",
+          "contribution": 0.08
+        },
+        {
+          "name": "Jumlah koneksi total masih dalam batas transaksi ritel",
+          "technical_name": "total_degree_log_norm",
+          "contribution": -0.07
+        },
+        {
+          "name": "Variasi nilai keluaran tidak sepenuhnya seragam",
+          "technical_name": "output_value_dispersion",
+          "contribution": -0.04
+        },
+        {
+          "name": "Korelasi waktu dengan kluster pencairan hilir",
+          "technical_name": "temporal_sync_with_sink_score",
+          "contribution": 0.06
+        }
+      ]
+    },
+    {
+      "id": "tx_230471301",
+      "short_id": "tx_2304…1301",
+      "role": "Pengumpul K1",
+      "status": "perantara",
+      "timestep": 43,
+      "score": 0.83,
+      "band": "Tinggi",
+      "pred_set": [
+        "Ilegal"
+      ],
+      "volume_btc": 7.4,
+      "in_degree": 2,
+      "out_degree": 1,
+      "x": 680,
+      "y": 120,
+      "features_top": [
+        {
+          "name": "Dana hanya singgah singkat sebelum diteruskan ke simpul berikutnya",
+          "technical_name": "relay_passthrough_velocity",
+          "contribution": 0.14
+        },
+        {
+          "name": "Menerima aliran dari node sumber berisiko tinggi",
+          "technical_name": "upstream_source_risk_prop",
+          "contribution": 0.12
+        },
+        {
+          "name": "Sebagian kecil dana dipotong pada setiap lompatan (pola pengelupasan)",
+          "technical_name": "peel_fraction_consistency",
+          "contribution": 0.08
+        },
+        {
+          "name": "Jumlah koneksi total masih dalam batas transaksi ritel",
+          "technical_name": "total_degree_log_norm",
+          "contribution": -0.07
+        },
+        {
+          "name": "Variasi nilai keluaran tidak sepenuhnya seragam",
+          "technical_name": "output_value_dispersion",
+          "contribution": -0.04
+        },
+        {
+          "name": "Korelasi waktu dengan kluster pencairan hilir",
+          "technical_name": "temporal_sync_with_sink_score",
+          "contribution": 0.06
+        }
+      ]
+    },
+    {
+      "id": "tx_230471302",
+      "short_id": "tx_2304…1302",
+      "role": "Pengumpul K2",
+      "status": "perantara",
+      "timestep": 43,
+      "score": 0.85,
+      "band": "Tinggi",
+      "pred_set": [
+        "Ilegal"
+      ],
+      "volume_btc": 7.2,
+      "in_degree": 2,
+      "out_degree": 1,
+      "x": 680,
+      "y": 225,
+      "features_top": [
+        {
+          "name": "Dana hanya singgah singkat sebelum diteruskan ke simpul berikutnya",
+          "technical_name": "relay_passthrough_velocity",
+          "contribution": 0.14
+        },
+        {
+          "name": "Menerima aliran dari node sumber berisiko tinggi",
+          "technical_name": "upstream_source_risk_prop",
+          "contribution": 0.12
+        },
+        {
+          "name": "Sebagian kecil dana dipotong pada setiap lompatan (pola pengelupasan)",
+          "technical_name": "peel_fraction_consistency",
+          "contribution": 0.08
+        },
+        {
+          "name": "Jumlah koneksi total masih dalam batas transaksi ritel",
+          "technical_name": "total_degree_log_norm",
+          "contribution": -0.07
+        },
+        {
+          "name": "Variasi nilai keluaran tidak sepenuhnya seragam",
+          "technical_name": "output_value_dispersion",
+          "contribution": -0.04
+        },
+        {
+          "name": "Korelasi waktu dengan kluster pencairan hilir",
+          "technical_name": "temporal_sync_with_sink_score",
+          "contribution": 0.06
+        }
+      ]
+    },
+    {
+      "id": "tx_230471303",
+      "short_id": "tx_2304…1303",
+      "role": "Pengumpul K3",
+      "status": "perantara",
+      "timestep": 43,
+      "score": 0.81,
+      "band": "Tinggi",
+      "pred_set": [
+        "Ilegal"
+      ],
+      "volume_btc": 6.15,
+      "in_degree": 2,
+      "out_degree": 1,
+      "x": 680,
+      "y": 330,
+      "features_top": [
+        {
+          "name": "Dana hanya singgah singkat sebelum diteruskan ke simpul berikutnya",
+          "technical_name": "relay_passthrough_velocity",
+          "contribution": 0.14
+        },
+        {
+          "name": "Menerima aliran dari node sumber berisiko tinggi",
+          "technical_name": "upstream_source_risk_prop",
+          "contribution": 0.12
+        },
+        {
+          "name": "Sebagian kecil dana dipotong pada setiap lompatan (pola pengelupasan)",
+          "technical_name": "peel_fraction_consistency",
+          "contribution": 0.08
+        },
+        {
+          "name": "Jumlah koneksi total masih dalam batas transaksi ritel",
+          "technical_name": "total_degree_log_norm",
+          "contribution": -0.07
+        },
+        {
+          "name": "Variasi nilai keluaran tidak sepenuhnya seragam",
+          "technical_name": "output_value_dispersion",
+          "contribution": -0.04
+        },
+        {
+          "name": "Korelasi waktu dengan kluster pencairan hilir",
+          "technical_name": "temporal_sync_with_sink_score",
+          "contribution": 0.06
+        }
+      ]
+    },
+    {
+      "id": "tx_230471304",
+      "short_id": "tx_2304…1304",
+      "role": "Pengumpul K4",
+      "status": "perantara",
+      "timestep": 43,
+      "score": 0.79,
+      "band": "Tinggi",
+      "pred_set": [
+        "Ilegal"
+      ],
+      "volume_btc": 2.9,
+      "in_degree": 1,
+      "out_degree": 1,
+      "x": 680,
+      "y": 435,
+      "features_top": [
+        {
+          "name": "Dana hanya singgah singkat sebelum diteruskan ke simpul berikutnya",
+          "technical_name": "relay_passthrough_velocity",
+          "contribution": 0.14
+        },
+        {
+          "name": "Menerima aliran dari node sumber berisiko tinggi",
+          "technical_name": "upstream_source_risk_prop",
+          "contribution": 0.12
+        },
+        {
+          "name": "Sebagian kecil dana dipotong pada setiap lompatan (pola pengelupasan)",
+          "technical_name": "peel_fraction_consistency",
+          "contribution": 0.08
+        },
+        {
+          "name": "Jumlah koneksi total masih dalam batas transaksi ritel",
+          "technical_name": "total_degree_log_norm",
+          "contribution": -0.07
+        },
+        {
+          "name": "Variasi nilai keluaran tidak sepenuhnya seragam",
+          "technical_name": "output_value_dispersion",
+          "contribution": -0.04
+        },
+        {
+          "name": "Korelasi waktu dengan kluster pencairan hilir",
+          "technical_name": "temporal_sync_with_sink_score",
+          "contribution": 0.06
+        }
+      ]
+    },
+    {
+      "id": "tx_230488910",
+      "short_id": "tx_2304…8910",
+      "role": "Titik pencairan",
+      "status": "titik_pencairan",
+      "timestep": 43,
+      "score": 0.94,
+      "band": "Sangat tinggi",
+      "pred_set": [
+        "Ilegal"
+      ],
+      "volume_btc": 23.45,
+      "in_degree": 4,
+      "out_degree": 1,
+      "x": 885,
+      "y": 265,
+      "features_top": [
+        {
+          "name": "Arus masuk terkonsentrasi dari banyak jalur perantara dalam satu timestep",
+          "technical_name": "fan_in_peeling_convergence_ratio_t0",
+          "contribution": 0.28
+        },
+        {
+          "name": "Dana langsung diteruskan dari perantara dalam waktu kurang dari 2 blok",
+          "technical_name": "upstream_hop1_dwell_time_min",
+          "contribution": 0.21
+        },
+        {
+          "name": "Mayoritas tetangga satu lompatan memiliki skor risiko di atas kuartil ke-90",
+          "technical_name": "neighbor_1hop_risk_q90_mean",
+          "contribution": 0.17
+        },
+        {
+          "name": "Nominal transaksi menyerupai akumulasi pecahan seragam (smurfing)",
+          "technical_name": "input_amount_uniformity_entropy",
+          "contribution": 0.12
+        },
+        {
+          "name": "Rasio biaya transaksi di atas kebiasaan kluster normal",
+          "technical_name": "fee_to_volume_zscore_local",
+          "contribution": -0.05
+        },
+        {
+          "name": "Usia riwayat transaksi dompet tujuan relatif baru",
+          "technical_name": "entity_active_timestep_span",
+          "contribution": 0.08
+        },
+        {
+          "name": "Terdapat satu keluaran ke entitas dengan reputasi stabil",
+          "technical_name": "downstream_known_service_ratio",
+          "contribution": -0.04
+        }
+      ]
+    },
+    {
+      "id": "tx_230490011",
+      "short_id": "tx_2304…0011",
+      "role": "Transaksi normal N1",
+      "status": "normal",
+      "timestep": 42,
+      "score": 0.12,
+      "band": "Rendah",
+      "pred_set": [
+        "Legal"
+      ],
+      "volume_btc": 0.45,
+      "in_degree": 1,
+      "out_degree": 1,
+      "x": 475,
+      "y": 22,
+      "features_top": [
+        {
+          "name": "Tidak terhubung kembali ke titik pencairan mana pun",
+          "technical_name": "sink_reconvergence_indicator",
+          "contribution": -0.19
+        },
+        {
+          "name": "Waktu tahan dana wajar (lebih dari 24 blok sebelum digunakan)",
+          "technical_name": "holding_period_blocks_log",
+          "contribution": -0.14
+        },
+        {
+          "name": "Pola masukan dan keluaran konsisten dengan pembayaran biasa",
+          "technical_name": "standard_2out_payment_pattern",
+          "contribution": -0.09
+        },
+        {
+          "name": "Tetangga satu lompatan didominasi transaksi berisiko rendah",
+          "technical_name": "neighbor_1hop_benign_share",
+          "contribution": -0.08
+        },
+        {
+          "name": "Berbagi satu leluhur jauh dengan transaksi yang ditandai",
+          "technical_name": "ancestor_2hop_flagged_ overlap",
+          "contribution": 0.04
+        },
+        {
+          "name": "Biaya transaksi normal tanpa percepatan prioritas",
+          "technical_name": "priority_fee_premium_ratio",
+          "contribution": -0.03
+        }
+      ]
+    },
+    {
+      "id": "tx_230490012",
+      "short_id": "tx_2304…0012",
+      "role": "Transaksi normal N2",
+      "status": "normal",
+      "timestep": 43,
+      "score": 0.15,
+      "band": "Rendah",
+      "pred_set": [
+        "Legal"
+      ],
+      "volume_btc": 0.32,
+      "in_degree": 1,
+      "out_degree": 0,
+      "x": 680,
+      "y": 515,
+      "features_top": [
+        {
+          "name": "Tidak terhubung kembali ke titik pencairan mana pun",
+          "technical_name": "sink_reconvergence_indicator",
+          "contribution": -0.19
+        },
+        {
+          "name": "Waktu tahan dana wajar (lebih dari 24 blok sebelum digunakan)",
+          "technical_name": "holding_period_blocks_log",
+          "contribution": -0.14
+        },
+        {
+          "name": "Pola masukan dan keluaran konsisten dengan pembayaran biasa",
+          "technical_name": "standard_2out_payment_pattern",
+          "contribution": -0.09
+        },
+        {
+          "name": "Tetangga satu lompatan didominasi transaksi berisiko rendah",
+          "technical_name": "neighbor_1hop_benign_share",
+          "contribution": -0.08
+        },
+        {
+          "name": "Berbagi satu leluhur jauh dengan transaksi yang ditandai",
+          "technical_name": "ancestor_2hop_flagged_ overlap",
+          "contribution": 0.04
+        },
+        {
+          "name": "Biaya transaksi normal tanpa percepatan prioritas",
+          "technical_name": "priority_fee_premium_ratio",
+          "contribution": -0.03
+        }
+      ]
+    },
+    {
+      "id": "tx_230490013",
+      "short_id": "tx_2304…0013",
+      "role": "Transaksi normal N3",
+      "status": "normal",
+      "timestep": 43,
+      "score": 0.09,
+      "band": "Rendah",
+      "pred_set": [
+        "Legal"
+      ],
+      "volume_btc": 0.18,
+      "in_degree": 1,
+      "out_degree": 0,
+      "x": 885,
+      "y": 465,
+      "features_top": [
+        {
+          "name": "Tidak terhubung kembali ke titik pencairan mana pun",
+          "technical_name": "sink_reconvergence_indicator",
+          "contribution": -0.19
+        },
+        {
+          "name": "Waktu tahan dana wajar (lebih dari 24 blok sebelum digunakan)",
+          "technical_name": "holding_period_blocks_log",
+          "contribution": -0.14
+        },
+        {
+          "name": "Pola masukan dan keluaran konsisten dengan pembayaran biasa",
+          "technical_name": "standard_2out_payment_pattern",
+          "contribution": -0.09
+        },
+        {
+          "name": "Tetangga satu lompatan didominasi transaksi berisiko rendah",
+          "technical_name": "neighbor_1hop_benign_share",
+          "contribution": -0.08
+        },
+        {
+          "name": "Berbagi satu leluhur jauh dengan transaksi yang ditandai",
+          "technical_name": "ancestor_2hop_flagged_ overlap",
+          "contribution": 0.04
+        },
+        {
+          "name": "Biaya transaksi normal tanpa percepatan prioritas",
+          "technical_name": "priority_fee_premium_ratio",
+          "contribution": -0.03
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "tx_230410012",
+      "target": "tx_230421101",
+      "type": "inti",
+      "amount_btc": 4.2
+    },
+    {
+      "source": "tx_230410012",
+      "target": "tx_230421102",
+      "type": "inti",
+      "amount_btc": 3.85
+    },
+    {
+      "source": "tx_230410012",
+      "target": "tx_230421103",
+      "type": "inti",
+      "amount_btc": 2.15
+    },
+    {
+      "source": "tx_230410012",
+      "target": "tx_230421104",
+      "type": "penyamaran",
+      "amount_btc": 3.6
+    },
+    {
+      "source": "tx_230410089",
+      "target": "tx_230421103",
+      "type": "penyamaran",
+      "amount_btc": 1.95
+    },
+    {
+      "source": "tx_230410089",
+      "target": "tx_230421105",
+      "type": "inti",
+      "amount_btc": 4.5
+    },
+    {
+      "source": "tx_230410089",
+      "target": "tx_230421106",
+      "type": "inti",
+      "amount_btc": 3.3
+    },
+    {
+      "source": "tx_230421101",
+      "target": "tx_230450201",
+      "type": "inti",
+      "amount_btc": 3.75
+    },
+    {
+      "source": "tx_230421101",
+      "target": "tx_230490011",
+      "type": "penyamaran",
+      "amount_btc": 0.45
+    },
+    {
+      "source": "tx_230421102",
+      "target": "tx_230450202",
+      "type": "inti",
+      "amount_btc": 2.4
+    },
+    {
+      "source": "tx_230421102",
+      "target": "tx_230450203",
+      "type": "penyamaran",
+      "amount_btc": 1.45
+    },
+    {
+      "source": "tx_230421103",
+      "target": "tx_230450202",
+      "type": "penyamaran",
+      "amount_btc": 1.25
+    },
+    {
+      "source": "tx_230421103",
+      "target": "tx_230450203",
+      "type": "inti",
+      "amount_btc": 2.5
+    },
+    {
+      "source": "tx_230421104",
+      "target": "tx_230450204",
+      "type": "inti",
+      "amount_btc": 3.4
+    },
+    {
+      "source": "tx_230421104",
+      "target": "tx_230450205",
+      "type": "penyamaran",
+      "amount_btc": 0.2
+    },
+    {
+      "source": "tx_230421105",
+      "target": "tx_230450205",
+      "type": "inti",
+      "amount_btc": 3.0
+    },
+    {
+      "source": "tx_230421105",
+      "target": "tx_230450206",
+      "type": "inti",
+      "amount_btc": 1.5
+    },
+    {
+      "source": "tx_230421106",
+      "target": "tx_230450206",
+      "type": "penyamaran",
+      "amount_btc": 1.6
+    },
+    {
+      "source": "tx_230421106",
+      "target": "tx_230450207",
+      "type": "inti",
+      "amount_btc": 1.7
+    },
+    {
+      "source": "tx_230450201",
+      "target": "tx_230471301",
+      "type": "inti",
+      "amount_btc": 3.75
+    },
+    {
+      "source": "tx_230450202",
+      "target": "tx_230471301",
+      "type": "inti",
+      "amount_btc": 3.65
+    },
+    {
+      "source": "tx_230450203",
+      "target": "tx_230471302",
+      "type": "inti",
+      "amount_btc": 3.9
+    },
+    {
+      "source": "tx_230450204",
+      "target": "tx_230471302",
+      "type": "inti",
+      "amount_btc": 3.3
+    },
+    {
+      "source": "tx_230450205",
+      "target": "tx_230471303",
+      "type": "inti",
+      "amount_btc": 3.15
+    },
+    {
+      "source": "tx_230450206",
+      "target": "tx_230471303",
+      "type": "inti",
+      "amount_btc": 3.0
+    },
+    {
+      "source": "tx_230450207",
+      "target": "tx_230471304",
+      "type": "inti",
+      "amount_btc": 2.9
+    },
+    {
+      "source": "tx_230450207",
+      "target": "tx_230490012",
+      "type": "penyamaran",
+      "amount_btc": 0.32
+    },
+    {
+      "source": "tx_230471301",
+      "target": "tx_230488910",
+      "type": "inti",
+      "amount_btc": 7.35
+    },
+    {
+      "source": "tx_230471302",
+      "target": "tx_230488910",
+      "type": "inti",
+      "amount_btc": 7.15
+    },
+    {
+      "source": "tx_230471303",
+      "target": "tx_230488910",
+      "type": "inti",
+      "amount_btc": 6.1
+    },
+    {
+      "source": "tx_230471304",
+      "target": "tx_230488910",
+      "type": "inti",
+      "amount_btc": 2.85
+    },
+    {
+      "source": "tx_230471304",
+      "target": "tx_230490013",
+      "type": "penyamaran",
+      "amount_btc": 0.18
+    }
+  ]
+}

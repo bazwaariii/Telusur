@@ -1,0 +1,58 @@
+[
+  {
+    "id": "kluster-t43-23",
+    "rank": 1,
+    "code": "K-43",
+    "timestep": 43,
+    "timestep_label": "t43",
+    "node_count": 23,
+    "max_score": 0.94,
+    "band": "Sangat tinggi",
+    "title": "Konsolidasi darurat saat penutupan dark market",
+    "summary": "Dana dari dua dompet sumber dipecah melalui tiga lapis perantara dan rantai pengelupasan sebelum menyatu di satu titik pencairan pada t43.",
+    "focal_node_id": "tx_230488910",
+    "regime_note": "Terjadi tepat pada pergeseran rezim t43 (penutupan pasar gelap)."
+  },
+  {
+    "id": "kluster-t38-14",
+    "rank": 2,
+    "code": "K-38",
+    "timestep": 38,
+    "timestep_label": "t38",
+    "node_count": 14,
+    "max_score": 0.89,
+    "band": "Tinggi",
+    "title": "Rantai pengelupasan empat jalur ke bursa tujuan",
+    "summary": "Pola klasik pemecahan nominal bertahap (peeling chain) pada periode normal pra-t43 yang bermuara ke satu node agregasi.",
+    "focal_node_id": "tx_184920311",
+    "regime_note": "Periode stabil pra-t43 dengan sinyal struktural2-lompatan yang kuat."
+  },
+  {
+    "id": "kluster-t46-09",
+    "rank": 3,
+    "code": "K-46",
+    "timestep": 46,
+    "timestep_label": "t46",
+    "node_count": 9,
+    "max_score": 0.81,
+    "band": "Tinggi",
+    "title": "Pencairan jalur pendek pasca-pergeseran rezim",
+    "summary": "Pasca-t43 pelaku memperpendek jumlah lompatan perantara untuk menghindari deteksi pola lama, namun tertangkap melalui konvergensi arus masuk.",
+    "focal_node_id": "tx_291044812",
+    "regime_note": "Periode pasca-t43; ambang menyesuaikan diri menjaga beban tinjauan tetap terkendali."
+  },
+  {
+    "id": "kluster-t41-11",
+    "rank": 4,
+    "code": "K-41",
+    "timestep": 41,
+    "timestep_label": "t41",
+    "node_count": 11,
+    "max_score": 0.56,
+    "band": "Sedang",
+    "title": "Distribusi pembayaran kolam tambang (contoh alarm palsu)",
+    "summary": "Node distribusi dengan derajat keluar tinggi yang memicu ambang statis, namun setelah ditinjau analis diverifikasi sebagai pembayaran rutin kolam tambang.",
+    "focal_node_id": "tx_209331047",
+    "regime_note": "Contoh alur verifikasi manusia: ditandai sebagai alarm palsu untuk memperbarui ambang."
+  }
+]

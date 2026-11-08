@@ -1,0 +1,7 @@
+[build]
+  command = "node scripts/build-netlify.mjs"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "20"
+

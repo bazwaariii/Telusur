@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TELUSUR | Versi Cadangan Offline Mandiri (Rilis 0)</title>
+  <style>
+    :root {
+      --kertas: #F4F6F8;
+      --putih: #FFFFFF;
+      --tinta: #10233F;
+      --tinta-redup: #4A5A70;
+      --rute: #7A8799;
+      --garis: #D5DBE3;
+      --teal: #0F7C86;
+      --teal-tua: #0B646D;
+      --sinyal: #E8761E;
+      --sinyal-teks: #B5500A;
+      --bahaya: #C23B2E;
+      --font-judul: "Literata", Georgia, serif;
+      --font-ui: "Atkinson Hyperlegible Next", "Public Sans", system-ui, sans-serif;
+      --font-mono: "Atkinson Hyperlegible Mono", "Source Code Pro", ui-monospace, monospace;
+      --r-kontrol: 6px;
+      --r-panel: 12px;
+      --r-chip: 999px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--kertas);
+      color: var(--tinta);
+      font-family: var(--font-ui);
+      font-size: 15px;
+      line-height: 1.5;
+      text-align: left;
+    }
+    :focus-visible { outline: 2px solid var(--teal-tua); outline-offset: 2px; }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; transition: none !important; }
+    }
+    header {
+      background: var(--putih);
+      border-bottom: 1px solid var(--rute);
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 32px 24px; }
+    h1, h2, h3 { font-family: var(--font-judul); margin-top: 0; text-align: left; }
+    .panel {
+      background: var(--putih);
+      border: 1px solid var(--rute);
+      border-radius: var(--r-panel);
+      padding: 20px;
+      margin-bottom: 24px;
+    }
+    .btn-primary {
+      min-height: 44px;
+      padding: 10px 18px;
+      background: var(--tinta);
+      color: #FFFFFF;
+      border: 1px solid var(--tinta);
+      border-radius: var(--r-kontrol);
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .btn-secondary {
+      min-height: 44px;
+      padding: 10px 16px;
+      background: transparent;
+      color: var(--tinta);
+      border: 1px solid var(--rute);
+      border-radius: var(--r-kontrol);
+      font-weight: 500;
+      cursor: pointer;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--putih);
+      border-top: 1px solid var(--rute);
+      border-bottom: 1px solid var(--rute);
+      font-variant-numeric: tabular-nums;
+    }
+    th, td {
+      text-align: left;
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--garis);
+    }
+    th { border-bottom: 1px solid var(--rute); font-weight: 600; }
+    code { font-family: var(--font-mono); }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="font-family: var(--font-judul); font-weight: 600; font-size: 20px;">
+      TELUSUR (Mode Offline Mandiri Rilis 0)
+    </div>
+    <div style="font-size: 13px; color: var(--tinta-redup);">
+      Mode demo: data Elliptic (Bitcoin). Skor tidak berlaku untuk TRON/EVM.
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Dana yang dipecah ke ratusan dompet masih bermuara ke satu pintu keluar.</h1>
+    <p style="font-family: var(--font-judul); font-size: 18px; max-width: 68ch; color: var(--tinta-redup);">
+      TELUSUR menandai alirannya, menunjukkan alasannya, dan menyerahkan keputusan penahanan ke manusia.
+    </p>
+
+    <div class="panel">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
+        <strong>Graf Penelusuran &amp; Titik Pencairan (Skor 0,94)</strong>
+        <span style="font-size: 13px; color: var(--tinta-redup);">Data ilustrasi, bukan kasus nyata.</span>
+      </div>
+      <svg viewBox="0 0 900 280" style="width: 100%; height: auto; background: var(--kertas); border: 1px solid var(--garis); border-radius: 6px;">
+        <line x1="90" y1="140" x2="290" y2="60" stroke="#10233F" stroke-width="2.2" />
+        <line x1="90" y1="140" x2="290" y2="115" stroke="#10233F" stroke-width="2.2" />
+        <line x1="90" y1="140" x2="290" y2="170" stroke="#10233F" stroke-width="2.2" />
+        <line x1="90" y1="140" x2="290" y2="225" stroke="#10233F" stroke-width="2.2" />
+
+        <line x1="290" y1="60" x2="530" y2="60" stroke="#7A8799" stroke-width="1.8" stroke-dasharray="5 4" />
+        <line x1="290" y1="115" x2="530" y2="115" stroke="#7A8799" stroke-width="1.8" stroke-dasharray="5 4" />
+        <line x1="290" y1="170" x2="530" y2="170" stroke="#7A8799" stroke-width="1.8" stroke-dasharray="5 4" />
+        <line x1="290" y1="225" x2="530" y2="210" stroke="#7A8799" stroke-width="1.8" stroke-dasharray="5 4" />
+        <line x1="290" y1="225" x2="530" y2="255" stroke="#7A8799" stroke-width="1.8" stroke-dasharray="5 4" />
+
+        <line x1="530" y1="60" x2="770" y2="135" stroke="#10233F" stroke-width="2.4" />
+        <line x1="530" y1="115" x2="770" y2="135" stroke="#10233F" stroke-width="2.4" />
+        <line x1="530" y1="170" x2="770" y2="135" stroke="#10233F" stroke-width="2.4" />
+        <line x1="530" y1="210" x2="770" y2="135" stroke="#10233F" stroke-width="2.4" />
+
+        <circle cx="90" cy="140" r="16" fill="#10233F" />
+        <text x="90" y="144" text-anchor="middle" fill="#FFF" font-size="11" font-weight="700">S</text>
+        <text x="90" y="172" text-anchor="middle" fill="#10233F" font-size="11" font-weight="600">Sumber</text>
+
+        <circle cx="290" cy="60" r="14" fill="#0F7C86" /><text x="290" y="64" text-anchor="middle" fill="#FFF" font-size="10">M1</text>
+        <circle cx="290" cy="115" r="14" fill="#0F7C86" /><text x="290" y="119" text-anchor="middle" fill="#FFF" font-size="10">M2</text>
+        <circle cx="290" cy="170" r="14" fill="#0F7C86" /><text x="290" y="174" text-anchor="middle" fill="#FFF" font-size="10">M3</text>
+        <circle cx="290" cy="225" r="14" fill="#0F7C86" /><text x="290" y="229" text-anchor="middle" fill="#FFF" font-size="10">M4</text>
+
+        <circle cx="530" cy="60" r="14" fill="#0F7C86" /><text x="530" y="64" text-anchor="middle" fill="#FFF" font-size="10">P1</text>
+        <circle cx="530" cy="115" r="14" fill="#0F7C86" /><text x="530" y="119" text-anchor="middle" fill="#FFF" font-size="10">P2</text>
+        <circle cx="530" cy="170" r="14" fill="#0F7C86" /><text x="530" y="174" text-anchor="middle" fill="#FFF" font-size="10">P3</text>
+        <circle cx="530" cy="210" r="14" fill="#0F7C86" /><text x="530" y="214" text-anchor="middle" fill="#FFF" font-size="10">P4</text>
+        <circle cx="530" cy="255" r="13" fill="#FFFFFF" stroke="#7A8799" stroke-width="2" /><text x="530" y="259" text-anchor="middle" fill="#10233F" font-size="10">P5</text>
+        <text x="552" y="259" fill="#4A5A70" font-size="11">Normal (skor 0,12)</text>
+
+        <polygon points="770,115 790,135 770,155 750,135" fill="#E8761E" stroke="#10233F" stroke-width="1.5" />
+        <text x="770" y="175" text-anchor="middle" fill="#10233F" font-size="12" font-weight="700">Titik pencairan, skor 0,94</text>
+      </svg>
+    </div>
+
+    <div class="panel">
+      <h2>Ringkasan Metrik dan Register Klaim (Elliptic Bitcoin, 5 Seed)</h2>
+      <p style="font-size: 13px; color: var(--tinta-redup);">
+        Protokol: Elliptic (Bitcoin), pembagian temporal t1 sampai t34 / t35 sampai t49, rata-rata 5 seed. Ditandai untuk ditinjau. Skor risiko bukan bukti bersalah.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Metrik / Komponen</th>
+            <th>Nilai Terukur</th>
+            <th>Batas Klaim &amp; Keterangan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>LightGBM + fitur graf 2-lompatan</td>
+            <td><strong>F1 82,6% | FPR 0,24%</strong></td>
+            <td>Hanya terbukti pada Bitcoin (Elliptic), bukan TRON/EVM. Recall 73,1% (sekitar 1 dari 4 transaksi ilegal tidak tertangkap).</td>
+          </tr>
+          <tr>
+            <td>Ambang menyesuaikan diri (ACI)</td>
+            <td><strong>Rata-rata FPR 1,05% vs 1,54% statis</strong></td>
+            <td>Kendali jangka panjang; FPR per timestep sempat melewati 2% pada t44 (2,31%) dan t49 (2,14%).</td>
+          </tr>
+          <tr>
+            <td>Pergeseran rezim t43 (penutupan dark market)</td>
+            <td><strong>Recall turun 85,9% ke 1,8%</strong></td>
+            <td>ACI menjaga FPR tetapi tidak memulihkan recall tanpa pelatihan ulang. Pemantau drift PSI/KS dirancang, belum dievaluasi.</td>
+          </tr>
+          <tr>
+            <td>Kecepatan inferensi model</td>
+            <td><strong>&lt; 1 ms / transaksi (&gt; 39.000 tx/detik)</strong></td>
+            <td>Diukur pada satu CPU lokal (prosesor tunggal x86_64 tanpa GPU).</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>
+

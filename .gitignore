@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Next.js build output
+.next/
+out/
+build/
+dist/
+
+# Netlify Drop bundles
+SIAP_DROP_KE_NETLIFY/
+SIAP_DROP_KE_NETLIFY.zip
+
+# Runtime cache and state files
+public/data/runtime-state*.json
+scripts/.tmp_api_backup/
+
+# TypeScript build info
+tsconfig.tsbuildinfo
+next-env.d.ts
+
+# Legacy proposal with previous hackathon reference
+Proposal_TELUSUR_SENO_Hackathon_2026_final.pdf
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env*.local
+.env
+
+# Editor and OS
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db

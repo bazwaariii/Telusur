@@ -1,0 +1,27 @@
+{
+  "name": "telusur-web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "TELUSUR: Sistem forensik on-chain untuk penelusuran pencucian dana kripto dan deteksi titik pencairan",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:netlify": "node scripts/build-netlify.mjs",
+    "start": "next start",
+    "lint": "next lint",
+    "export-data": "python scripts/export_demo_data.py"
+  },
+  "dependencies": {
+    "graphology": "^0.25.4",
+    "next": "15.1.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.7.2"
+  }
+}
+
